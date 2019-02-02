@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DISCOVERY Group SITE!</title>
+</head>
+
+<body>
+<form>
+  Email:<br>
+  <input type="email" name="email" required><br>
+  Date of birth:<br>
+  <input type="date" name="bday" max="2000-01-01" required><br>
+  Name:<br>
+  <input type="text" name="username" required><br>
+  Phone number: <br>
+  <input type="tel" name="usrtel" pattern="[\+]\d{12}" placeholder="+256712363363" required><br>
+  
+  <input type="submit" value="Submit">
+  </form>
+  
+  
+  <p>The Current time is:</p>
+<p id="example"></p>
+
+<script>
+var display=setInterval(function(){Time()},0);
+
+function Time()
+{
+var date=new Date();
+var time=date.toLocaleTimeString();
+document.getElementById("example").innerHTML=time;
+}
+</script>
+
+
+</body>
+
+</html>
